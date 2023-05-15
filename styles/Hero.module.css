@@ -1,0 +1,243 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  position: relative;
+}
+
+.redBlob {
+  right: 0;
+  width: 50%;
+  transform: translate(40%, -20%);
+  background-color: rgb(58, 7, 7);
+  filter: blur(200px);
+}
+
+.blueBlob {
+  left: 50%;
+  width: 30%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(17, 17, 69);
+  filter: blur(250px);
+}
+
+.blueBlob,
+.redBlob {
+  position: absolute;
+  top: 0;
+  height: 50%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.heading {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  position: relative;
+  z-index: 2;
+}
+
+.heading h1 {
+  font-size: clamp(28px, 5vw, 60px);
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1.2;
+  background: linear-gradient(to right, #ffffff 0%, #c0c0c0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#gradient {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+#gradient h1:last-child {
+  background: linear-gradient(to right, #00a78e 0%, #008d55 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading p {
+  font-size: clamp(14px, 3vw, 18px);
+  width: 95%;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  color: #ababab;
+  font-weight: 400;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.form {
+  position: relative;
+  z-index: 2;
+  width: 350px;
+  border-radius: 16px;
+  padding: 1.2rem;
+  background: rgb(20, 20, 20);
+  background: linear-gradient(
+    135deg,
+    rgba(20, 20, 20, 0.6) 0%,
+    rgba(13, 13, 13, 0.404) 100%
+  );
+  backdrop-filter: blur(40px);
+  box-shadow: 1.2px 1.4px 1px rgba(0, 0, 0, 0.049),
+    3px 3.6px 2.6px rgba(0, 0, 0, 0.068), 6.2px 7.3px 5.3px rgba(0, 0, 0, 0.085),
+    12.8px 15px 11px rgba(0, 0, 0, 0.104), 35px 41px 30px rgba(0, 0, 0, 0.15);
+}
+
+#gry1,
+#gry2,
+#gry3,
+#gry4 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#gry1 {
+  top: 0;
+  left: 0;
+  background-color: #757575;
+}
+
+#gry2 {
+  top: 0;
+  left: 40%;
+  background-color: #d8d8d8;
+}
+
+#gry3 {
+  bottom: 0;
+  right: 40%;
+  background-color: #adadad;
+}
+
+#gry4 {
+  right: 0;
+  bottom: 5%;
+  background-color: #222222;
+}
+
+#gry5 {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-45%);
+  background-color: #222222;
+  filter: blur(70px);
+}
+
+.cardContainer {
+  position: relative;
+  width: 400px;
+  height: 220px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border-radius: 16px;
+  padding: 1.2rem;
+  color: black;
+  background-color: rgba(213, 213, 213, 0.45);
+  backdrop-filter: blur(40px);
+  box-shadow: 1.2px 1.4px 1px rgba(0, 0, 0, 0.049),
+    3px 3.6px 2.6px rgba(0, 0, 0, 0.068), 6.2px 7.3px 5.3px rgba(0, 0, 0, 0.085),
+    12.8px 15px 11px rgba(0, 0, 0, 0.104), 35px 41px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cardLeft {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardLeft h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.cardLeft h2 {
+  margin-top: auto;
+  font-size: 36px;
+  color: #1e1e1e;
+}
+
+.cardLeft p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #343434;
+}
+
+.cardRight {
+  margin-left: auto;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+
+  .heading {
+    margin-top: 0;
+    order: 2;
+  }
+
+  .heading h1 {
+    font-size: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .form {
+    order: 2;
+  }
+
+  #gry1,
+  #gry2,
+  #gry3,
+  #gry4 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .cardContainer {
+    width: 320px;
+    height: 200px;
+  }
+
+  .cardLeft h2 {
+    font-size: 32px;
+  }
+
+  .cardRight img {
+    width: 80px;
+  }
+}

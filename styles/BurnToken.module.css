@@ -1,0 +1,88 @@
+.container {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.content,
+.message {
+  margin-top: 2rem;
+  height: 80vh;
+  max-height: 280px;
+  border: 2px solid #292929;
+  background-color: #030303;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+#action {
+  transition: all 0.4s ease;
+}
+
+.content:hover {
+  border-color: #1d76c3;
+}
+
+.content:hover #action {
+  color: #1d76c3;
+}
+
+.content p {
+  font-style: italic;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.message {
+  min-height: 200px;
+  cursor: initial;
+  padding: 3rem 1rem;
+  height: max-content;
+  max-height: initial;
+  position: relative;
+}
+
+.message p {
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+}
+
+#burn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 8px 12px;
+  border: 1px solid #090909;
+  outline: none;
+  border-radius: 3px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4 ease;
+}
+
+#burn:hover {
+  background-color: #090909;
+}
+
+@media only screen and (max-width: 650px) {
+  .content {
+    height: 200px;
+
+    padding: 1rem;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+}

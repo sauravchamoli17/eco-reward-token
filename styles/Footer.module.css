@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  z-index: 2;
+  background-color: #0707078e;
+  border-top: 2px solid #252525;
+}
+
+.logo h1 {
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(to right, #00a78e 0%, #008d55 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.links li {
+  cursor: pointer;
+}
+
+.icons {
+  font-size: 1.4rem;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    padding: 1.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .links {
+    gap: 12px;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  z-index: 2;
+}
+
+.logo h1 {
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(to right, #00a78e 0%, #008d55 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+.links li {
+  cursor: pointer;
+}
+
+.icons {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    padding: 1.5rem 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .links {
+    display: none;
+  }
+}

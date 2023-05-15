@@ -1,0 +1,130 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.header {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.header span {
+  color: #909090;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #d22424;
+  color: rgb(255, 255, 255) !important;
+  padding: 4px 8px;
+}
+
+.mint {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mint p,
+.transfer p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #909090;
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.input button,
+.input input {
+  height: 100%;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.input button {
+  flex: 1;
+  outline: none;
+  cursor: pointer;
+  background-color: #101010;
+  color: #a7a7a7;
+  border: 4px solid black;
+  border-radius: 8px;
+}
+
+.input button:hover {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.input input {
+  flex: 6;
+  outline: none;
+  background-color: black;
+  padding: 0 8px;
+}
+
+.input input::placeholder,
+.transfer input::placeholder {
+  color: #212121;
+}
+
+.submitBtn {
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #008d55;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  border-radius: 6px;
+  transition: all 0.4s ease;
+}
+
+.submitBtn:hover {
+  background-color: #00a78e;
+}
+
+#faucet {
+  color: #2d59a7;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.transfer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transfer input {
+  outline: none;
+  background-color: black;
+  padding: 12px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 0.6px solid #e5e5e5;
+}
+
+.transfer input::placeholder {
+  color: #909090;
+}

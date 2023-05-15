@@ -1,0 +1,155 @@
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+#heading {
+  font-weight: 300;
+  color: #c3c3c3;
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: max-content;
+  font-size: 28px;
+}
+
+.content {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#gry1,
+#gry2,
+#gry3,
+#gry4 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #284ca5;
+}
+
+#gry1 {
+  top: 0;
+  left: 0;
+  background-color: #757575;
+}
+
+#gry2 {
+  top: 0;
+  left: 40%;
+  background-color: #d8d8d8;
+}
+
+#gry3 {
+  bottom: 0;
+  right: 40%;
+  background-color: #adadad;
+}
+
+#gry4 {
+  right: 0;
+  bottom: 5%;
+  background-color: #222222;
+}
+
+#gry5 {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222222;
+  filter: blur(70px);
+}
+
+.cardContainer {
+  position: relative;
+  width: 330px;
+  height: 180px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border-radius: 16px;
+  padding: 1.2rem;
+  color: black;
+  background-color: rgba(213, 213, 213, 0.45);
+  backdrop-filter: blur(40px);
+  box-shadow: 1.2px 1.4px 1px rgba(0, 0, 0, 0.049),
+    3px 3.6px 2.6px rgba(0, 0, 0, 0.068), 6.2px 7.3px 5.3px rgba(0, 0, 0, 0.085),
+    12.8px 15px 11px rgba(0, 0, 0, 0.104), 35px 41px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cardLeft {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardLeft h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cardLeft h2 {
+  margin-top: auto;
+  font-size: 32px;
+  color: #1e1e1e;
+}
+
+.cardLeft p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #343434;
+}
+
+.cardRight {
+  margin-left: auto;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.cardRight img {
+  width: 75px;
+}
+
+@media only screen and (max-width: 650px) {
+  .cardContainer {
+    width: 200px;
+    height: 130px;
+  }
+
+  .cardRight {
+    margin-right: 0;
+  }
+
+  .cardRight img {
+    width: 50px;
+  }
+
+  .cardLeft h3 {
+    font-size: 16px;
+  }
+
+  .cardLeft h2 {
+    font-size: 24px;
+  }
+
+  .cardLeft p {
+    font-size: 10px;
+  }
+}
