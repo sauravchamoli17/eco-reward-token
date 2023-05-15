@@ -1,7 +1,7 @@
 import abi from "./abi.json";
 
 export const contractABI = abi.abi;
-export const contractAddress = "0x71c6f7c9591036bcf4072c720f87bde2191822a3";
+export const contractAddress = "0x998978086d539464a533C4dF91F462E0E29e36D1";
 
 export function formatAddress(address) {
   return address.slice(0, 6) + "...." + address.slice(-4);
