@@ -38,8 +38,8 @@ function WalletProvider({ children }) {
         );
       } else {
         provider = new ethers.providers.EtherscanProvider(
-          "goerli",
-          process.env.NEXT_PUBLIC_ETHERSCAN_API_KEY
+          "mumbai",
+          process.env.ETHERSCAN_API_KEY
         );
         contractMethods = new ethers.Contract(
           contractAddress,
