@@ -1,4 +1,4 @@
-# [Eco Reward Token](https://eco-reward-token.vercel.app/)
+# [Eco Reward Token](https://eco-reward-token.vercel.app/){:target="_blank"}
 
 ## Description
 
