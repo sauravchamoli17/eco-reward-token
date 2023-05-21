@@ -22,7 +22,7 @@ function Hero() {
           </span>
         </span>
         <p>
-          Introducing the EcoReward Token Project, a groundbreaking initiative that harnesses the power of blockchain technology to drive environmental conservation and sustainability. By incentivizing individuals and organizations to adopt eco-friendly practices, EcoReward revolutionizes the way we approach environmental challenges.
+          Eco Reward Token is an ERC-20 token deployed on the Polygon Mumbai Testnet. It aims to incentivize and reward environmentally friendly activities. Each Eco token costs 0.001 MATIC, and there are a total of 1000 tokens available.
         </p>
         {!accountRef.current && (
           <button onClick={connectWallet} className="btn-hero">
